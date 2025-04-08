@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brimstone - Valorant Agent</title>
+  <link rel="stylesheet" href="stylebrim.css" />
+  <script defer src="scripts/brimstone.js"></script>
+</head>
+<body class="agent-page" style="background-image: url('dw651s7c9ip51.webp');">
+
+  <header>
+    <a href="index.html"><img src="Valorant-Emblem.png" alt="Logo" class="logo" /></a>
+  </header>
+
+  <section class="agent-info">
+    <h1>BRIMSTONE</h1>
+    <p>Joining from the U.S.A., Brimstone’s orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and safely make him the unmatched boots-on-the-ground commander.</p>
+    <div class="role">ROLE: <span class="role-type">Controller</span></div>
+  </section>
+
+  <section class="abilities-section">
+    <h2>SPECIAL ABILITIES</h2>
+    <div class="abilities-icons">
+      <img src="Incendiary.webp" alt="Incendiary" onclick="showAbility('incendiary')">
+      <img src="Stim_Beacon.webp" alt="Stim Beacon" onclick="showAbility('stim')">
+      <img src="Sky_Smoke.webp" alt="Sky Smokes" onclick="showAbility('smokes')">
+      <img src="Orbital_Strike.webp" alt="Orbital Strike" onclick="showAbility('orbital')">
+    </div>
+    <div id="ability-description" class="ability-description">
+      <h3>Click an ability icon to see the description</h3>
+    </div>
+  </section>
+
+</body>
+</html>
