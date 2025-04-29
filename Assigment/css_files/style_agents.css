@@ -1,0 +1,66 @@
+.agent-page {
+    background-size: 2120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+
+  }
+  
+  .agent-info {
+    padding: 60px 40px 20px;
+    background-color: rgba(0, 0, 0, 0.35);
+    text-align: center;
+  }
+  .logo {
+    width: 120px;
+    transition: transform 0.3s;
+  }
+  
+  .agent-info h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .agent-info p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
+  }
+  
+  .role {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .role-type {
+    color: #ff4655;
+    font-weight: bold;
+  }
+  
+  .abilities-section {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.35);
+    text-align: center;
+  }
+  
+  .abilities-icons img {
+    width: 60px;
+    margin: 10px 15px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .abilities-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  .ability-description {
+    margin-top: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #111;
+    border-radius: 10px;
+  }
+  

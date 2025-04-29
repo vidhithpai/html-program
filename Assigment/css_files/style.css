@@ -1,0 +1,201 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../Assests/Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    z-index: 1000;
+    display: flex;
+}
+  .logo {
+    width: 120px;
+    transition: transform 0.3s;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+  }
+  
+  #GameInfo {
+    text-align: center;
+    padding: 46px 20px;
+  }
+  #Agents {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  nav a{
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    padding:20px 15px 0 15px; 
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+ html{
+    scroll-behavior: smooth;
+}
+
+  nav a:hover {
+    transform: scale(1.1);
+    color:red;
+  }
+  
+.input[type=text] {
+  max-width: 180px;
+  height: 20px;
+  background-color: #fff;
+  color: #242424;
+  padding: .15rem .5rem;
+  min-height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 10px 20px -18px #ff4655;
+  border-bottom: 3px solid #ff4655;
+  transition: .10s ease;
+}
+.search{
+  padding:15px 0 15px 1200px;
+}
+  h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    letter-spacing: 5px;
+    font-family: Arial;
+  }
+
+/*  removing default button style */
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #ff4655;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+.game-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    font-family:Arial;
+    font-size: 20px;
+    max-width: 800px;
+    color: white;
+  }
+  .agents-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .agent-card {
+    width: 200px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .agent-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff4655;
+  }
+  
+  .agent-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .agent-card p {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #111;
+    text-align: center;
+    color:white;
+    transition: transform 0.3s,color 0.3s ease;
+  }
+  .agent-card p:hover{
+    transform: scale(1.05);
+    color:#ff4655;
+  }
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  border: none;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  z-index: 1;
+}
