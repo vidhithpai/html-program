@@ -1,8 +1,8 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('../Assests/Background3.png');
+    background-image: url('../Assests/Backgrounds/Background3.png');
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -34,15 +34,18 @@ body {
     text-align: center;
     padding: 50px 20px;
   }
-  nav a{
+  .navbar{ 
+    padding-top:14px ; 
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  .bar{
     font-weight: bold;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 25px;
-    padding:20px 15px 0 15px; 
+    font-size: 18px;
+    padding:20px 15px 9px 15px; 
     transition: transform 0.3s ease, color 0.3s ease;
   }
-
   nav a:hover {
     transform: scale(1.1);
     color:rgb(247, 61, 29);
@@ -227,10 +230,15 @@ body {
 .social-icons a:hover {
   background: #444;
 }
-
-.riot-logo img {
+.riot-logo a{
+  transition: transform 0.3s; 
+}
+.riot-logo img:hover {
+  transform: scale(1.2);
+}
+.riot-logo img{
   width: 120px;
-  margin: 20px 0;
+  margin: auto;
 }
 
 .footer-text {
@@ -251,14 +259,15 @@ body {
 .footer-links a {
   color: #fff;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 20px;
   text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: transform 0.5s; 
 }
-
 .footer-links a:hover {
-  text-decoration: underline;
+  transform: scale(1.1); 
+  color: #ff4655; 
 }
-
 .esrb {
   display: flex;
   justify-content: center;
@@ -274,7 +283,6 @@ body {
   width: 60px;
   margin-right: 15px;
 }
-
 .esrb ul {
   list-style: none;
   padding: 0;

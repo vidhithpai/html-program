@@ -1,9 +1,17 @@
+.logo {
+  width: 120px;
+  transition: transform 0.3s;
+}
+.logo:hover {
+  transform: scale(1.2);
+}
+
 .agent-page {
     background-size: 1919px;
     background-position: auto;
     background-repeat: no-repeat;
     color: white;
-
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   .agent-info {
@@ -24,16 +32,16 @@
   .agent-info p {
     max-width: 600px;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 20px;
   }
   
   .role {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 20px;
   }
   
   .role-type {
-    color: #ff4655;
+    font-size: 25px;
     font-weight: bold;
   }
   
@@ -62,5 +70,6 @@
     padding: 20px;
     background-color: #111;
     border-radius: 10px;
+    font-size: 18px;
   }
   
