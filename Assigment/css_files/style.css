@@ -1,12 +1,14 @@
-body {
+  body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('../Assests/Backgrounds/Background3.png');
+    background-image: url('../Assests/Backgrounds/Background4.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-blend-mode: a;
   }
+
   nav {
     position: fixed;
     top: 0;
@@ -16,7 +18,8 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.5);
     z-index: 1000;
     display: flex;
-}
+  }
+
   .logo {
     width: 120px;
     transition: transform 0.3s;
@@ -30,14 +33,17 @@ body {
     text-align: center;
     padding: 46px 20px;
   }
+
   #Agents {
     text-align: center;
     padding: 50px 20px;
   }
+
   .navbar{ 
     padding-top:14px ; 
     transition: transform 0.3s ease, color 0.3s ease;
   }
+
   .bar{
     font-weight: bold;
     text-decoration: none;
@@ -46,9 +52,10 @@ body {
     padding:20px 15px 9px 15px; 
     transition: transform 0.3s ease, color 0.3s ease;
   }
+
   nav a:hover {
     transform: scale(1.1);
-    color:rgb(247, 61, 29);
+    color:#FF4655;
   }
   
 .input[type=text] {
@@ -68,9 +75,11 @@ body {
   border-radius: 100px;
   transition: .10s ease;
 }
+
 .search{
   padding:15px 0 15px 1200px;
 }
+
   h1 {
     font-size: 48px;
     margin-bottom: 40px;
@@ -88,11 +97,10 @@ body {
   cursor: pointer;
 }
 
-/* button styling */
 .button {
   --border-right: 6px;
   --text-stroke-color: rgba(255,255,255,0.6);
-  --animation-color: #ff4655;
+  --animation-color: #FF4655;
   --fs-size: 2em;
   letter-spacing: 3px;
   text-decoration: none;
@@ -103,6 +111,7 @@ body {
   color: transparent;
   -webkit-text-stroke: 1px var(--text-stroke-color);
 }
+
 .hover-text {
   position: absolute;
   box-sizing: border-box;
@@ -115,6 +124,7 @@ body {
   transition: 0.5s;
   -webkit-text-stroke: 1px var(--animation-color);
 }
+
 .button:hover .hover-text {
   width: 100%;
   filter: drop-shadow(0 0 23px var(--animation-color))
@@ -134,6 +144,7 @@ body {
     max-width: 800px;
     color: white;
   }
+
   .agents-container {
     display: flex;
     flex-wrap: wrap;
@@ -153,7 +164,7 @@ body {
   
   .agent-card:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 20px #ff4655;
+    box-shadow: 0 0 50px #ff4655;
   }
   
   .agent-card img {
@@ -169,12 +180,9 @@ body {
     background-color: #111;
     text-align: center;
     color:white;
-    transition: transform 0.3s,color 0.3s ease;
+    transition: transform 0.3s, box-shadow 0.3s, color 0.3s ease;
   }
-  .agent-card p:hover{
-    transform: scale(1.05);
-    color:#ff4655;
-  }
+
 .video-container {
   position: relative;
   width: 100%;
@@ -230,12 +238,14 @@ body {
 .social-icons a:hover {
   background: #444;
 }
+
 .riot-logo a{
   transition: transform 0.3s; 
 }
 .riot-logo img:hover {
   transform: scale(1.2);
 }
+
 .riot-logo img{
   width: 120px;
   margin: auto;
@@ -264,10 +274,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   transition: transform 0.5s; 
 }
+
 .footer-links a:hover {
   transform: scale(1.1); 
   color: #ff4655; 
 }
+
 .esrb {
   display: flex;
   justify-content: center;
@@ -283,6 +295,7 @@ body {
   width: 60px;
   margin-right: 15px;
 }
+
 .esrb ul {
   list-style: none;
   padding: 0;
