@@ -6,21 +6,53 @@
   <title>Valorant</title>
   <link rel="icon" type="image/x-icon" href="../Assests/Icons/valorant-logo.jpg">
   <link rel="stylesheet" defer href="../css_files/style.css">
-  <script defer src="../scripts/scroll.js"></script>
+  <script defer src="../scripts/script.js"></script>
 </head>
 <body>
   <nav class="navbar">
-    <a href="Valorant.html" >
+    <a href="index.html" >
       <img src="../Assests/Icons/Valorant-Emblem.png" alt="Valorant Logo" class="logo">
     </a>
     <a class="bar" href="#GameInfo" >GAME INFO</a>
     <a class="bar" href="#Agents" >AGENTS</a>
-
+<a class="login-btn" onclick="openModal()">LOGIN</a>
     <div class="search">
+  
     <input type="text" name="search" placeholder="Search..." class="input">
   </div>
 
 </nav>
+
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 style="text-align: center; color: #ff4655;">Create Account</h2>
+      <form id="loginForm" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+        <button type="submit" class="submit-btn">Create Account</button>
+      </form>
+    </div>
+  </div>
+
 <section>
   <div id="GameInfo">
     </div><div class="video-container">
@@ -51,23 +83,23 @@
   </div>
   <br>
   <div class="agents-container">
-        <a href="brimstone.html" class="agent-card">
+        <a href="../html_files/brimstone.html" class="agent-card">
           <img src="../Assests/Brimstone/Brimstone_Agent_Valorant.webp" alt="Brimstone">
           <p>BRIMSTONE</p>
         </a>
-    <a href="phoenix.html" class="agent-card">
+    <a href="../html_files/phoenix.html" class="agent-card">
       <img src="../Assests/Phoenix/Phoenix_artwork.webp" alt="Phoenix">
       <p>PHOENIX</p>
     </a>
-    <a href="sage.html" class="agent-card">
+    <a href="../html_files/sage.html" class="agent-card">
       <img src="../Assests/Sage/Sage_Agent_Valorant.webp" alt="Sage" >
       <p>SAGE</p>
     </a>
-    <a href="sova.html" class="agent-card">
+    <a href="../html_files/sova.html" class="agent-card">
       <img src="../Assests/Sova/Sova_artwork.webp" alt="Sova">
       <p>SOVA</p>
     </a>
-    <a href="jett.html" class="agent-card" class="card">
+    <a href="../html_files/jett.html" class="agent-card" class="card">
       <img src="../Assests/Jett/Jett_artwork.webp" alt="Jett">
       <p>JETT</p>
     </a>

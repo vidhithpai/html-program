@@ -27,3 +27,35 @@ document.querySelectorAll('nav a').forEach(anchor => {
         window.requestAnimationFrame(step); // Start animation
     });
 });
+
+function openModal() {
+    document.getElementById('loginModal').style.display = 'flex';
+  }
+
+  function closeModal() {
+    document.getElementById('loginModal').style.display = 'none';
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    const formData = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      password: document.getElementById('password').value,
+      phone: document.getElementById('phone').value,
+      dob: document.getElementById('dob').value
+    };
+    
+    // Here you would typically send this data to a server
+    console.log('Form submitted:', formData);
+    alert('Account created successfully!');
+    closeModal();
+  }
+
+  // Close modal when clicking outside
+  window.onclick = function(event) {
+    const modal = document.getElementById('loginModal');
+    if (event.target == modal) {
+      closeModal();
+    }
+  }
